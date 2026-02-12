@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1 align="center">Welcome </h1>
+ <audio  id="myAudio">
+  <source src="cid.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+ <audio  id="myAudio1">
+  <source src="fgg.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+<center>
+    <img width="200px" src="backk.jpg" onclick="playMusic(),showElement()">
+</center>
+<br>
+
+<!-- hide div -->
+
+<div id="secretMessage"  style="display: none;" >
+   <img width="100%" src="https://tse3.mm.bing.net/th/id/OIP.zzAkm7DJDR8zU4OyKehMSQHaDs?rs=1&pid=ImgDetMain&o=7&rm=3" alt="CHODU CID">
+    <br>
+    <br>
+    <center>
+    <button onclick="playMusi()">Back</button>
+    </center>
+</div>
+
+
+
+
+<!-- javascript -->
+<script>
+  function playMusic() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+  }
+
+  function playMusi() {
+    var audio = document.getElementById("myAudio1");
+    audio.play();
+  }
+
+   function showElement() {
+    var element = document.getElementById("secretMessage");
+    
+    // Change display from 'none' to 'block'
+    element.style.display = "block";
+  }
+  
+</script>
+
+    
+</body>
+</html>
